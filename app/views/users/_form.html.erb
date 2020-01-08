@@ -5,10 +5,18 @@
     <%= form_for(@user, :html => {class: "form-horizontal", role: "form"}) do |f| %>
       <div class="form-group">
         <div class="col-sm-2 control-label">
+          <%= f.label :fullname, class: "form-label" %>
+        </div>
+        <div class="col-sm-8">
+          <%= f.text_field :fullname, class: "form-control", placeholder: "Enter fullname", autofocus: true %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-2 control-label">
           <%= f.label :username, class: "form-label" %>
         </div>
         <div class="col-sm-8">
-          <%= f.text_field :username, class: "form-control", placeholder: "Enter username", autofocus: true %>
+          <%= f.text_field :username, class: "form-control", placeholder: "Enter username" %>
         </div>
       </div>
       <div class="form-group">
