@@ -1,8 +1,28 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 375px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
 // Navbar
 
 .nav-align {
     width: 100%;
     justify-content: flex-end;
+        .dropdown-align {
+            margin-left: -75px;
+        }
+        @media screen and (max-width: #{$screen-sm-min}) {
+            .dropdown-align {
+                margin-left: 0;
+            }
+        }    
 }
 
 @import "bootstrap";
