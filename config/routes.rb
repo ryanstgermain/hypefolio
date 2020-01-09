@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
-  resources :items
+  resources :items, path: 'portfolios'
   # resources :categories, except: [:destroy]
 end
